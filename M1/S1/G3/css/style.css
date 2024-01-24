@@ -28,8 +28,9 @@
     border-top: 1px solid orange;
 }
 
-.colori-testo p{
+#colori-testo p{
     color: #f26257;
+    font-weight: 600;
 }
 
 .colori-a a{
