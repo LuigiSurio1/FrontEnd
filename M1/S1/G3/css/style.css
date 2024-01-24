@@ -20,3 +20,21 @@
     text-align: center;
     margin: 0%;
 }
+
+#titolo-header{
+    background-color:#fff9e9;
+    color: #088495;
+    border-top: orange;
+}
+
+.colori-testo p{
+    color: #f26257;
+}
+
+.colori-a a{
+    color: #6bbeca;
+}
+
+.border-color{
+    color: #6bbeca;
+}
