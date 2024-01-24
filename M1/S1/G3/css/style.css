@@ -41,3 +41,9 @@
     border-bottom: #6bbeca;
     border-bottom: 1px solid #6bbeca ;
 }
+
+#cite-color{
+    color: grey;
+    text-align: center;
+    font-style: normal;
+}
