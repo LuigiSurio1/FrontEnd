@@ -25,6 +25,7 @@
     background-color:#fff9e9;
     color: #088495;
     border-top: orange;
+    border-top: 1px solid orange;
 }
 
 .colori-testo p{
@@ -36,5 +37,6 @@
 }
 
 .border-color{
-    color: #6bbeca;
+    border-bottom: #6bbeca;
+    border-bottom: 1px solid #6bbeca ;
 }
