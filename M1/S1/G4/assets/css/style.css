@@ -6,16 +6,12 @@
 
 #body {
     margin: 15px;
+    background-image: url(../img/sfondo.png);
     
 }
 
 #background {
     background-image: cover;
-}
-
-#sfondo{
-    background-image: url(../img/sfondo.png);
-
 }
 /* HEADER */
 #header {
@@ -24,24 +20,14 @@
     padding-bottom: 10px;
     background: radial-gradient(circle, rgba(0, 120, 203, 1) 0%, rgba(1, 118, 119, 1) 100%);
     margin: 10px 5px 10px 5px;
-}
-
-.menù {
-    padding: 10px;
-    color: white;
-    font-size: large
+    color: #fff;
+    
 }
 
 .menù a {
     color: white;
 }
 
-#titolo-header {
-    padding: 10px;
-    color: white;
-    text-transform: uppercase;
-
-}
 
 #logo {
     padding-top: 10px;
@@ -75,9 +61,23 @@
 
 /* TABELLE */
 .tabella-anni {
-    background:blue;
-    border: 1px solid;
-    
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.corpo-tabella-anni{
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.liste{
+    list-style-type: disc;
+    padding-left: 15px;
+}
+.liste-ordinate{
+    list-style-type: decimal;
 }
 
 
