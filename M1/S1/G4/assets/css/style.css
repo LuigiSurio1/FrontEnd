@@ -6,19 +6,24 @@
 
 #body {
     margin: 15px;
-    background-image: url(../img/sfondo.png);
+    
 }
 
 #background {
     background-image: cover;
 }
 
+#sfondo{
+    background-image: url(../img/sfondo.png);
+
+}
 /* HEADER */
 #header {
     text-align: center;
     padding: top 10px;
     padding-bottom: 10px;
     background: radial-gradient(circle, rgba(0, 120, 203, 1) 0%, rgba(1, 118, 119, 1) 100%);
+    margin: 10px 5px 10px 5px;
 }
 
 .menù {
@@ -46,13 +51,10 @@
 
 /* MAIN */
 #main {
-    padding-top: 15px;
+   
     text-align: center;
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    padding-bottom: 15px;
-    border-left: 10px;
-    border-right: 10px;
-    border-top: 15px;
+    margin: 10px 5px 10px 5px;
 
 
 }
@@ -74,7 +76,10 @@
 /* TABELLE */
 .tabella-anni {
     background:blue;
+    border: 1px solid;
+    
 }
+
 
 /* FORM */
 
@@ -84,7 +89,6 @@
 #footer {
     background: radial-gradient(circle, rgba(0, 120, 203, 1) 0%, rgba(1, 118, 119, 1) 100%);
     text-align: center;
-    padding-top: 15px;
-    border-top: 10px;
     color: white;
+    margin: 10px 5px 10px 5px;
 }
