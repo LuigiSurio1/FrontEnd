@@ -1,0 +1,90 @@
+/* IMPOSTAZIONI GENERALI */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#body {
+    margin: 15px;
+    background-image: url(../img/sfondo.png);
+}
+
+#background {
+    background-image: cover;
+}
+
+/* HEADER */
+#header {
+    text-align: center;
+    padding: top 10px;
+    padding-bottom: 10px;
+    background: radial-gradient(circle, rgba(0, 120, 203, 1) 0%, rgba(1, 118, 119, 1) 100%);
+}
+
+.menù {
+    padding: 10px;
+    color: white;
+    font-size: large
+}
+
+.menù a {
+    color: white;
+}
+
+#titolo-header {
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+#logo {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    image-rendering: optimizeQuality;
+}
+
+/* MAIN */
+#main {
+    padding-top: 15px;
+    text-align: center;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding-bottom: 15px;
+    border-left: 10px;
+    border-right: 10px;
+    border-top: 15px;
+
+
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+#grey {
+
+    color: grey;
+}
+
+#grassetto-titolo {
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+
+
+/* TABELLE */
+.tabella-anni {
+    background:blue;
+}
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+#footer {
+    background: radial-gradient(circle, rgba(0, 120, 203, 1) 0%, rgba(1, 118, 119, 1) 100%);
+    text-align: center;
+    padding-top: 15px;
+    border-top: 10px;
+    color: white;
+}
