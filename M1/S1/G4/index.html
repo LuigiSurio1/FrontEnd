@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrizione" content="Primi passi operativi per creare un modello di pagina HTML
+    per un post. Scopri come iniziare in modo facile.">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+</head>
+
+<body id="body">
+    <div id="sfondo">
+        <header id="header">
+            <div id="logo">
+                <img src="./img/logo.svg" width="50%" height="60%" alt="logo epicode" />
+            </div>
+            <div id="titolo-header">
+                <h1><b>Epicode - Il blog dei developers</b></h1>
+            </div>
+            <nav class="menù">
+                <ul>
+                    <li><i class="fas fa-angle-double-right"><a href="#">Home</a></i><i
+                            class="fas fa-angle-double-left"></i></li>
+                    <li><i class="fas fa-angle-double-right"><a href="#">Articoli</a></i><i
+                            class="fas fa-angle-double-left"></i></li>
+                    <li><i class="fas fa-angle-double-right"><a href="#">Lavora con noi</a></i><i
+                            class="fas fa-angle-double-left"></i></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <section>
+                <div id="grassetto-titolo">
+                    <h2>Come creare un template per i post</h2>
+                </div>
+                <br>
+                <div id="grey">
+                    <p><i class="fas fa-pen-square"></i>di Mario Rossi</i><i class="fas fa-clock">pubblicato il 25 - 10
+                            -
+                            2020</i></p>
+                </div>
+                <br>
+                <div class="primo-blocco">
+                    <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da
+                        applicare a tutte le pagine</p>
+                    <br>
+                    <p>Le varie aree saranno quindi suddivise in: </p>
+                    <br>
+                </div>
+                <ul class="liste">
+                    <li>Contenuti di intestazione del tag <code>&lt;header></code></li>
+                    <li>Contenuti centrali variabili del tag <code>&lt;main></code></li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer></code></li>
+                </ul>
+    </div>
+    <br>
+    <p>Formattazione del codice</p>
+    <br>
+    <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con
+        CSS.
+        Perciò i passi saranno:</p>
+
+    <ol class="liste">
+        <li>Progettare il markup assegnando ad ogni specifico tasto il tag appropriato</li>
+        <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+        <li>Applicare gli stili CSS</li>
+    </ol>
+    </div>
+    <br>
+
+    <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.</p>
+    </section>
+    <section>
+        <table>
+            <caption><b>Diffusione dei CSS</b></caption>
+            <thead class="tabella-anni">
+                <tr>
+                    <th>Anno</th>
+                    <th>% di utilizzo</th>
+                    <th>Supporto browser</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2000</td>
+                    <td>20%</td>
+                    <td>17%</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>35%</td>
+                    <td>22%</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>45%</td>
+                    <td>42%</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>80%</td>
+                    <td>51%</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>100%</td>
+                    <td>76%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Un test di validazione potrà essere fatto tramite il tool online<a href="#"> Link Esterno</a>
+            dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere
+            stati dei veri devolopers come loro:</p>
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/pnNCvnlmJXg?si=Hfmi8wOnCVFzRIln"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </section>
+    <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+    <article>
+        <form>
+            <input type="email" placeholder="inserisci l'email">
+            <button>Iscriviti</button>
+        </form>
+    </article>
+    <aside>
+        <div>
+            <dl>
+                <dt><a href="#">Articoli correlati</a></dt>
+                <dt>Validare il codice HTML</dt>
+                <dt>Categoria: develop</dt>
+                <dt>Data: 18-9-2020</dt>
+            </dl>
+        </div>
+        <div>
+            <dl>
+                <dt><a href="#">Correggere la sintassi</a></dt>
+                <dt>Categoria: develop</dt>
+                <dt>Data: 16-9-2020</dt>
+            </dl>
+        </div>
+        <div>
+            <dl>
+                <dt><a href="#">Meno Kb nella pagina</a></dt>
+                <dt>Categoria: ottimizzazione</dt>
+                <dt>Data: 30-9-2020</dt>
+            </dl>
+        </div>
+    </aside>
+    </main>
+    <footer id="footer">
+        <h4>Blog Epicode ©2023</h4>
+        <br>
+        <p>Testata online di Mario Rossi, registrata con prot. n. 213/2018
+            - via Luigi Einaudi 2 - Milano. P.IVA 00112233.
+        </p>
+        <p>info@epicode.shool</p> <a href="#">LINK EMAIL</a>
+    </footer>
+    </div>
+</body>
+
+</html>
