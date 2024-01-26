@@ -19,7 +19,7 @@ body img{
 
  #header{
     background: #000;
-    background: cover;
+    background-size: cover;
     padding-bottom: 50px;
     
  }
@@ -148,4 +148,8 @@ body img{
 
  #footer a{
     color: #c8e7f0;
+ }
+
+ #footer p{
+   border-bottom: 1px solid;
  }
