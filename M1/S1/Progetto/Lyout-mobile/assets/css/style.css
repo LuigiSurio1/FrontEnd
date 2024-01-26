@@ -19,8 +19,8 @@ body img{
 
  #header{
     background: #000;
+    background: cover;
     padding-bottom: 50px;
-    background-size: cover;
     
  }
 
@@ -34,26 +34,32 @@ body img{
     background-size: cover;
     background-repeat: no-repeat;
     font-size: larger;
-    margin-bottom: 20px;
-    margin-top: 20px;
     
  }
 
  .sopra h1{
-    font-size: larger;
-    padding-bottom: 20px;
+    font-size: xx-large;
     text-align: center;
+    line-height: 1.1em;
+    margin-bottom: 15px;
  }
 
  .sopra p{
-    padding-bottom: 20px;
-    text-transform: lowercase;
+    margin-bottom: 40px;
+
  }
 
  .sopra a{
     background: #f04c2f;
     color: white;
     border-radius: 20%;
+    border-style: solid;
+    border-width: 1px;
+
+ }
+
+ .corpo h3{
+    margin-top: 20px;
  }
 
  .corpo img{
@@ -78,7 +84,12 @@ body img{
 
  .corpo-org cite{
     margin-bottom: 20px;
-    font: italic;
+    font-style: italic;
+ }
+
+ .corpo-org p{
+    text-transform: uppercase;
+    margin-top: 20px;
  }
 
  #aside{
@@ -88,8 +99,39 @@ body img{
  }
 
  #aside img{
-    height: 330px;
-    width: 330px;
+    background: contain;
+    overflow: auto;
+ }
+
+ #aside .b1{
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-color: #dee1e3;
+    overflow: auto;
+    resize: both;
+ }
+
+
+
+ #aside .b2{
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-color: #dee1e3;
+    overflow: auto;
+    resize: both;
+ }
+
+ #aside .b3{
+    border-style: solid;
+    border-width: 1px;
+    border-left-style:solid;
+    border-right-style:solid;
+    border-color: #dee1e3;
+    overflow: auto;
+    resize: both;
+    
  }
 
  #footer{
@@ -100,6 +142,8 @@ body img{
 
  #footer h2{
     color: white;
+    font-size: xx-large;
+    margin-bottom: 20px;
  }
 
  #footer a{
