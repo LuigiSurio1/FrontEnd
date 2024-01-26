@@ -52,9 +52,11 @@ body img{
  .sopra a{
     background: #f04c2f;
     color: white;
-    border-radius: 20%;
-    border-style: solid;
-    border-width: 1px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+
+    
 
  }
 
@@ -108,8 +110,7 @@ body img{
     border-width: 1px;
     margin-bottom: 10px;
     border-color: #dee1e3;
-    overflow: auto;
-    resize: both;
+    padding: 40px;
  }
 
 
@@ -119,8 +120,7 @@ body img{
     border-width: 1px;
     margin-bottom: 10px;
     border-color: #dee1e3;
-    overflow: auto;
-    resize: both;
+    padding: 40px;
  }
 
  #aside .b3{
@@ -129,8 +129,8 @@ body img{
     border-left-style:solid;
     border-right-style:solid;
     border-color: #dee1e3;
-    overflow: auto;
-    resize: both;
+    padding: 40px;
+
     
  }
 
