@@ -34,6 +34,7 @@ body img{
     background-size: cover;
     background-repeat: no-repeat;
     font-size: larger;
+    padding: 40px;
     
  }
 
@@ -79,6 +80,7 @@ body img{
     color: white;
     font-size: 30px;
     margin-bottom: 20px;
+    padding: 30px;
  }
 
  .corpo-org cite{
@@ -89,6 +91,7 @@ body img{
  .corpo-org p{
     text-transform: uppercase;
     margin-top: 20px;
+    padding: 35px;
  }
 
  #aside{
@@ -141,12 +144,18 @@ body img{
     color: white;
     font-size: xx-large;
     margin-bottom: 20px;
+    padding: 20px;
  }
 
  #footer a{
     color: #c8e7f0;
  }
 
- #footer p{
+ .blocco{
+   padding-bottom: 25px;
+ }
+
+ .blocco p{
    border-bottom: 1px solid;
+   padding-bottom: 30px;
  }
