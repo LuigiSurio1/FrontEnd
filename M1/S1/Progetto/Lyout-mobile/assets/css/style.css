@@ -1,0 +1,93 @@
+/* Your styles here */
+body img{
+    max-width: 100%;
+}
+
+#conteiner{
+    text-align: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65em;
+    font-size: 1.2rem;
+}
+
+#conteiner h1,h3,h2,a{
+    font-family: 'Montserrat', sans-serif;
+    color:#25a2c3;
+    line-height: 1.5em;
+}
+
+ #header{
+    background: #000;
+    padding-bottom: 50px;
+    
+ }
+
+ #header img{
+   height: 35%;
+   width: 35%;
+ }
+
+ .sopra{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: larger;
+    
+ }
+
+ .sopra h1{
+    font-size: larger;
+    padding-bottom: 20px;
+    text-align: center;
+ }
+
+ .sopra p{
+    padding-bottom: 20px;
+    text-transform: lowercase;
+ }
+
+ .sopra a{
+    background: #f04c2f;
+    color: white;
+    border-radius: 20%;
+ }
+
+ .corpo img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+ }
+
+ .corpo-org{
+    background-color: #e22d0e;
+    color: white;
+ }
+
+ .corpo-org h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+
+ .corpo-org cite{
+    margin-bottom: 20px;
+    font: italic;
+ }
+
+ #aside{
+    border
+ }
+
+ #footer{
+    background-color: #25a2c3;
+    color: white;
+ }
+
+ #footer h2{
+    color: white;
+ }
+
+ #footer a{
+    color: #c8e7f0;
+ }
