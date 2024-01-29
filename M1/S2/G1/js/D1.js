@@ -36,6 +36,7 @@ console.log(numero + numeroX);
 */
 
 let x = 12;
+console.log(x)
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
@@ -62,9 +63,9 @@ let name2 = 'John';
 console.log(name1 === name2);
 
 
-  if (name1 == name2.toLowerCase()){
-   console.log(true);
+  /*if (name1 == name2.toLowerCase()){
+   console.log(name1 === name2);
 } else {
   name2 != name1.toLowerCase();
-  console.log(false);
-}
+  console.log(name1 != name2);
+}*/
