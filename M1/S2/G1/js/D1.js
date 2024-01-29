@@ -31,6 +31,8 @@ let numero = 12;
 let numeroX = 20;
 console.log(numero + numeroX);
 
+console.log(12 + 20);
+
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
