@@ -40,11 +40,11 @@ if(n1%n2){
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let l1 = 8;
-let l2 = 4;
+let l1 = 16;
+let l2 = 8;
 
-if(l1 + l2 || l1 - l2){
-  console.log(8);
+if(l1 + l2 || l1 - l2 == 8){
+  console.log(true);
 } else {
   console.log(false);
 }
@@ -83,7 +83,6 @@ if(shoppingCart*20/100 > 50){
 */
 
 
-
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
@@ -117,19 +116,19 @@ if(nonPari(numero) == true){
   console.log('false');
 }
 
-/* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
+/*ESERCIZIO 10
+  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza. */ 
+
+
+  let val = 7 
+  if (val < 10 && val > 5) {
       console.log("Meno di 10");
-    } else if (val < 5) {
+    } else if (val <= 5) {
       console.log("Meno di 5");
     } else { 
       console.log("Uguale a 10 o maggiore");
     }
-  */
-
-
+  
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
