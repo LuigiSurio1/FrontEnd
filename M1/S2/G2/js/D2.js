@@ -6,8 +6,10 @@
 
   if (num1 > num2) { 
     console.log(num1);
-  } else {
+  } else if (num1 < num2) {
     console.log(num2);
+  } else {
+    console.log('sono uguali')
   }
 
 /* ESERCIZIO 2
@@ -30,7 +32,7 @@ if(numero1 !== numero2){
 let n1 = 20;
 let n2 = 5;
 
-if(n1%n2){
+if(n1%n2 === 0){
   console.log('divisibile per 5');
 } else {
   console.log('false');
@@ -43,10 +45,10 @@ if(n1%n2){
 let l1 = 16;
 let l2 = 8;
 
-if(l1 + l2 || l1 - l2 == 8){
-  console.log(true);
+if(l1 === 8 || l2 === 8 || (l1 - l2) === 8 || (l1 + l2) === 8){
+  console.log('verificato');
 } else {
-  console.log(false);
+  console.log('non verificato');
 }
 
 /* ESERCIZIO 5
@@ -56,11 +58,13 @@ if(l1 + l2 || l1 - l2 == 8){
 */
 
 let totalShoppingCart = 70;
+let costoSped = 10;
+let totDaPagare = totalShoppingCart
 
-if(totalShoppingCart > 50){
-  console.log('spedizione gratuita');
+if(totalShoppingCart < 50){
+  totDaPagare += costoSped
 } else {
-  console.log(totalShoppingCart - 10);
+  console.log(totDaPagare);
 }
 
 /* ESERCIZIO 6
@@ -70,7 +74,7 @@ if(totalShoppingCart > 50){
 
 let shoppingCart = 40;
 
-if(shoppingCart*20/100 > 50){
+if(shoppingCart*20/100 < 50){
   console.log('spedizione gratuita');
 } else {
   console.log(shoppingCart - 10);
@@ -87,13 +91,13 @@ if(shoppingCart*20/100 > 50){
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-let b1 = 5;
+
 let b2 = 'Marco'
 
-if(b1 , b2 === Number){
+if(typeof b2 === 'Number'){
   console.log('true');
 } else {
-  console.log(isNaN(b1 , b2));
+  console.log('false');
 }
 
 /* ESERCIZIO 9
@@ -121,9 +125,9 @@ if(nonPari(numero) == true){
 
 
   let val = 7 
-  if (val < 10 && val > 5) {
+  if (val < 5) {
       console.log("Meno di 10");
-    } else if (val <= 5) {
+    } else if (val < 10) {
       console.log("Meno di 5");
     } else { 
       console.log("Uguale a 10 o maggiore");
