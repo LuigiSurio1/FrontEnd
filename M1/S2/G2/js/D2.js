@@ -154,7 +154,7 @@ console.log(me.lastName)
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-delete me.skills[2]
+me.skills.pop()
 console.log(me.skills)
 
 /* ESERCIZIO 14
