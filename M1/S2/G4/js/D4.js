@@ -30,9 +30,9 @@ console.log(crazySum(2, 4));
 
 function crazyDiff(a) {
     if (a > 19) {
-        return (a / 19) * 3;
+        return Math.abs(a - 19) * 3;
     } else {
-        return a / 19;
+        return Math.abs(a - 19);
     }
 }
 
@@ -44,14 +44,11 @@ console.log(crazyDiff(30));
 */
 
 function boundary(n) {
-    if (n >= 20 && n <= 100) {
+    if ((n > 20 && n <= 100) || n === 400 ) {
         return 'true';
-    } else if (n = 400) {
-        return 'true';
-    } else {
+    }
         return 'false';
     }
-}
 console.log(boundary(50))
 
 /* ESERCIZIO 5
@@ -101,11 +98,13 @@ console.log(reverseString('Epicode'));
 */
 
 function upperFirst(o) {
-   let newO = o.split(' ');
-   for(i = 0; i < newO.lenght; i++){
-    newO[i] = newO[i][0].toUpperCase() + newO[i].substring(1);
-   }
-   return newO.join(' ');
+    const newO = o.split(' ');
+    for (i = 0; i < newO.lenght; i++) {
+        new0[i] = newO[i][0].toUpperCase() + newO[i].substring(1);
+    }
+
+    return newO.join(' ')
+
 }
 console.log(upperFirst('la bella vita'))
 
@@ -115,8 +114,8 @@ console.log(upperFirst('la bella vita'))
 */
 
 function cutString(k) {
-    return k.slice(0, k -1);
-   
+    return k.slice(0, k - 1);
+
 }
 console.log(cutString('maiale'));
 
