@@ -58,11 +58,10 @@ console.log(boundary(50))
 */
 
 function epify(p) {
-    if (p.slice(0, 5) === 'EPICODE') {
-        return null;
-    } else {
-        return p.replace('Scuola', 'EPICODE');
+    if (!p.startsWith('EPICODE')) {
+        return p + 'EPICODE';
     }
+    return p;
 }
 console.log(epify('Scuola, è molto intensa'));
 
