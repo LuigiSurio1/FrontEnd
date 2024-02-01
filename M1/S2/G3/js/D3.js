@@ -179,7 +179,8 @@ let i = 0;
     crewMass += starWarsCharacters[i].mass;
     i++;
   }
-console.log(crewMass)
+  console.log(crewMass)
+
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
 
