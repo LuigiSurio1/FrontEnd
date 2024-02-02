@@ -21,7 +21,7 @@ console.log(pets[3]);
 */
 let ordinePets = pets.sort();
 let lunghezzaPets = ordinePets.length;
-for(let i = 0; i < ordinePets.length; i++){
+for (let i = 0; i < ordinePets.length; i++) {
   console.log(ordinePets[i]);
 }
 /* ESERCIZIO 3
@@ -30,14 +30,14 @@ for(let i = 0; i < ordinePets.length; i++){
 
 let ordinePets2 = pets.reverse();
 let lunghezzaPets2 = ordinePets.length;
-for(let i = 0; i < ordinePets.length; i++){
+for (let i = 0; i < ordinePets.length; i++) {
   console.log(ordinePets2[i]);
 }
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
-let primo = pets.splice(0,1)[0];
+let primo = pets.splice(0, 1)[0];
 pets.push(primo);
 console.log(pets);
 
@@ -71,17 +71,17 @@ const licensePlate = {
   Volkswagen: ['56789']
 };
 
-for(let i = 0; i < cars.length; i++){
-  switch(cars[i].brand){
+for (let i = 0; i < cars.length; i++) {
+  switch (cars[i].brand) {
     case 'Ford':
-    licensePlate.Ford.push(cars[i])
-    break;
+      licensePlate.Ford.push(cars[i])
+      break;
     case 'Peugeot':
-    licensePlate.Pegeout.push(cars[i])
-    break;
+      licensePlate.Pegeout.push(cars[i])
+      break;
     case 'Volkswagen':
-    licensePlate.Volkswagen.push(cars[i])
-    break;
+      licensePlate.Volkswagen.push(cars[i])
+      break;
   }
 }
 console.log(licensePlate);
@@ -99,7 +99,7 @@ const oggettoCar = {
 };
 cars.push(oggettoCar);
 console.log(cars)
-for(let i = 0; i < ordinePets.length; i++){
+for (let i = 0; i < ordinePets.length; i++) {
   cars[i].trims.pop();
 }
 console.log(cars)
@@ -109,7 +109,7 @@ console.log(cars)
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = []
-for(i = 0; i < cars.length; i++){
+for (i = 0; i < cars.length; i++) {
   justTrims.push(cars[i].trims[0])
 }
 console.log(justTrims)
@@ -119,6 +119,13 @@ console.log(justTrims)
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
+for (let i = 0; i < cars.length; i++) {
+  if (cars[i].color.charAt(0) === 'b') {
+    console.log('Fizz')
+  } else {
+    console.log('Buzz')
+  };
+}
 
 
 /* ESERCIZIO 9
