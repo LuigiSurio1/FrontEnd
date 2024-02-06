@@ -3,16 +3,14 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-const stringe = function newString(first , second){
+function newString(first , second){
   let p2 = first.substring(0,2);
   let u3 = second.substring(second.lenght - 3);
   let result = p2 + u3;
   return result.toUpperCase();
 }
-let first = 'Luigi';
-let second = 'Surio';
-let concatenato = (first + second);
-console.log(concatenato);
+console.log(newString("luigi", "surio"));
+
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
@@ -81,6 +79,12 @@ console.log(valori(numeriGen2));
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+
+let k = ['Epicode', 'is', 'great'];
+function stringheLunghe(stringheF, stringheL) {
+  return stringheF.map(stringheL => stringheL.lenght);
+}
+console.log(stringheLunghe(k));
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
