@@ -91,9 +91,9 @@ function numeriDispari() {
   for(i = 1; i < 100; i++){
     gruppo.push(i);
   }
-  return 
-  
+  return gruppo;
 }
+console.log(numeriDispari());
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -220,12 +220,18 @@ function filmVecchio(filmArrey) {
   filmArrey.forEach(film => {
     if(Number(film.Year) < Number(filmPiuVecchio.Year));
   })
+  return filmPiuVecchio;
 }
+console.log(filmVecchio(movies));
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+function numeroFilm(numero) {
+   return numero.length;
+}
+console.log(numeroFilm(movies));
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
