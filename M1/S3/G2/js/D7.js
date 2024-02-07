@@ -240,6 +240,11 @@ console.log(numeroFilm(movies));
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+function nomeFilm(array, valore) { 
+    return array.map(valore => movies.Title);
+  }
+console.log(nomeFilm(movies));
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
