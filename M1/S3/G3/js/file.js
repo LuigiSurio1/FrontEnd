@@ -1,9 +1,9 @@
 let myList = document.getElementsByTagName("li");
 for (let i = 0; i < myList.length; i++) {
   let span = document.createElement("span");
-  let txt = document.createTextNode("");
+  let testo = document.createTextNode("");
   span.className = "close";
-  span.appendChild(txt);
+  span.appendChild(testo);
   myList[i].appendChild(span);
 }
 
@@ -28,16 +28,16 @@ function nuovoElemento() {
     let t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {
-      alert("");
+      alert("Non hai scritto nulla, c*glione");
     } else {
       document.getElementById("uL").appendChild(li);
     }
     document.getElementById("Input").value = "";
   
     let span = document.createElement("span");
-    let txt = document.createTextNode("x");
+    let testo = document.createTextNode("x");
     span.className = "close";
-    span.appendChild(txt);
+    span.appendChild(testo);
     li.appendChild(span);
   
     for (i = 0; i < close.length; i++) {
