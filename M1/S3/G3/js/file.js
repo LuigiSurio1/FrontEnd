@@ -1,7 +1,7 @@
 let myList = document.getElementsByTagName("li");
 for (let i = 0; i < myList.length; i++) {
   let span = document.createElement("span");
-  let testo = document.createTextNode("");
+  let testo = document.createTextNode("x");
   span.className = "close";
   span.appendChild(testo);
   myList[i].appendChild(span);
