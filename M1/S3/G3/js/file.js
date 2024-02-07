@@ -1,10 +1,10 @@
 let myList = document.getElementsByTagName("li");
-for (let i = 0; i < myNodelist.length; i++) {
+for (let i = 0; i < myList.length; i++) {
   let span = document.createElement("span");
   let txt = document.createTextNode("");
   span.className = "close";
   span.appendChild(txt);
-  myNodelist[i].appendChild(span);
+  myList[i].appendChild(span);
 }
 
 let close = document.getElementsByClassName("close");
@@ -19,7 +19,7 @@ let list = document.querySelector('ul');
 list.addEventListener('click', function(el) {
   if (el.target.tagName === 'li') {
     el.target.classList.toggle('check');
-  }
+  } 
 }, false);
 
 function nuovoElemento() {
@@ -34,7 +34,7 @@ function nuovoElemento() {
     }
     document.getElementById("Input").value = "";
   
-    let span = document.createElement("SPAN");
+    let span = document.createElement("span");
     let txt = document.createTextNode("x");
     span.className = "close";
     span.appendChild(txt);
