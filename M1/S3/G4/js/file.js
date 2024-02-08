@@ -51,7 +51,7 @@ function getRandomNumber(min, max) {
     }
     let numeroCasuale;
     do {
-      numeroCasuale = getRandomNumber(1, 76);
+      numeroCasuale = getRandomNumber(1, 90);
     } while (Array.from(numeriEstratti).some(cella => cella.textContent == numeroCasuale));
 
    
