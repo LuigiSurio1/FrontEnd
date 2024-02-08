@@ -17,7 +17,7 @@ function getRandomNumber(min, max) {
     const numeri = generaNumeriTombola();
 
     for (let i = 0; i < 5; i++) { 
-      for (let j = 0; j < 15; j++) { 
+      for (let j = 0; j < 18; j++) { 
         const cella = document.createElement("div");
         const numero = numeri.pop();
         cella.textContent = numero;
