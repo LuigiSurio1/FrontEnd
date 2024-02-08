@@ -5,7 +5,7 @@ function getRandomNumber(min, max) {
 
   function generaNumeriTombola() {
     const numeri = [];
-    for (let i = 1; i <= 76; i++) {
+    for (let i = 1; i <= 90; i++) {
       numeri.push(i);
     }
     return numeri;
@@ -50,7 +50,7 @@ function getRandomNumber(min, max) {
       cella.classList.remove('estratto');
     });
 
-    const numeroCasuale = getRandomNumber(1, 76);
+    const numeroCasuale = getRandomNumber(1, 90);
     const celleTabellone = document.querySelectorAll("#tabellone td");
     for (const cella of celleTabellone) {
       if (cella.textContent == numeroCasuale) {
