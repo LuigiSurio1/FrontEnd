@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Tombola</title>
 </head>
 <body>
-  <h1>Tombola</h1>
-  <table id="tombola">
-    <tbody id="tabellone">
-    </tbody>
-  </table>
-  <button onclick="estraiNumero()">Estrai Numero</button>
+    <h1>Tombola</h1>
+    <label for="numeroTabelline">Seleziona il numero di tabelline da giocare:</label>
+    <input type="number" id="numeroTabelline" min="1" value="1">
+    <button onclick="inizializzaPartita()">Inizia Partita</button>
+    <h2>Tabellone</h2>
+    <table id="tombola">
+      <tbody id="tabellone">
+        <button onclick="estraiNumero()">Estrai Numero</button>   
+      </tbody>
+    </table>
+    <h2>Tabellina del Giocatore</h2>
+    <table id="tabellinaGiocatore" class="tabellina-giocatore">
+      <tbody id="tabellinaGiocatoreBody">
+      </tbody>
+    </table>
 <script src="./js/file.js"></script>
 </body>
 </html>
