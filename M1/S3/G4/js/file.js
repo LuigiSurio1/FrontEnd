@@ -43,7 +43,6 @@ function getRandomNumber(min, max) {
   function estraiNumero() {
     const numeriTabellone = document.querySelectorAll("#tabellone .cella");
     const numeriEstratti = document.querySelectorAll('#tabellone .estratto');
-    const numeriGiocatore = document.querySelectorAll('#tabellinaGiocatore .cella');
 
     if (numeriEstratti.length >= numeriTabellone.length) {
       alert("Tutti i numeri sono stati estratti!");
