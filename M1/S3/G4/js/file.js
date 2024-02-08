@@ -57,11 +57,6 @@ function getRandomNumber(min, max) {
    
     const cellaTabellone = Array.from(numeriTabellone).find(cella => cella.textContent == numeroCasuale);
     cellaTabellone.classList.add('estratto');
-
-    const cellaGiocatore = Array.from(numeriGiocatore).find(cella => cella.textContent == numeroCasuale);
-    if (cellaGiocatore) {
-      cellaGiocatore.classList.add('estratto');
-    }
   }
 
   function inizializzaPartita() {
