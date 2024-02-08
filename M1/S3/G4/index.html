@@ -7,21 +7,21 @@
     <title>Tombola</title>
 </head>
 <body>
-    <h1>Tombola</h1>
-    <label for="numeroTabelline">Seleziona il numero di tabelline:</label>
-    <input type="number" id="numeroTabelline" min="1" value="1">
-    <button onclick="inizializzaPartita()">Inizia Partita</button>
-    <h2>Tabellone</h2>
-    <table id="tombola">
-      <tbody id="tabellone">
-        <button onclick="estraiNumero()">Estrai Numero</button>   
-      </tbody>
-    </table>
-    <h2>Tabellina del Giocatore</h2>
-    <table id="tabellinaGiocatore" class="tabellina-giocatore">
-      <tbody id="tabellinaGiocatoreBody">
-      </tbody>
-    </table>
+    
+  <h1>Tombola</h1>
+
+  <label for="numeroTabelline">Seleziona il numero di tabelline da giocare:</label>
+  <input type="number" id="numeroTabelline" min="1" value="1">
+  <button onclick="inizializzaPartita()">Inizia Partita</button>
+  <button onclick="estraiNumero()">Estrai Numero</button>
+
+  <h2>Tabellone</h2>
+  <div id="tabellone" class="tabellone">
+  </div>
+
+  <h2>Tabellina del Giocatore</h2>
+  <div id="tabellinaGiocatore" class="tabellina">
+  </div>
 <script src="./js/file.js"></script>
 </body>
 </html>

@@ -16,75 +16,57 @@ function getRandomNumber(min, max) {
     const tabellone = document.getElementById("tabellone");
     const numeri = generaNumeriTombola();
 
-    for (let i = 0; i < 8; i++) { 
-      const riga = document.createElement("tr");
-      for (let j = 0; j < 10; j++) { 
-        const cella = document.createElement("td");
+    for (let i = 0; i < 5; i++) { 
+      for (let j = 0; j < 15; j++) { 
+        const cella = document.createElement("div");
         const numero = numeri.pop();
         cella.textContent = numero;
-        riga.appendChild(cella);
+        cella.classList.add('cella');
+        tabellone.appendChild(cella);
       }
-      tabellone.appendChild(riga);
     }
   }
 
   function riempiTabellinaGiocatore() {
-    const tabellinaGiocatoreBody = document.getElementById("tabellinaGiocatoreBody");
+    const tabellinaGiocatore = document.getElementById("tabellinaGiocatore");
     const numeri = generaNumeriTombola();
 
-    for (let i = 0; i < 4; i++) { 
-      const riga = document.createElement("tr");
-      for (let j = 0; j < 6; j++) { 
-        const cella = document.createElement("td");
-        const numero = numeri.pop();
-        cella.textContent = numero;
-        riga.appendChild(cella);
-      }
-      tabellinaGiocatoreBody.appendChild(riga);
+    for (let i = 0; i < 24; i++) { 
+      const cella = document.createElement("div");
+      const numero = numeri.pop();
+      cella.textContent = numero;
+      cella.classList.add("cella");
+      tabellinaGiocatore.appendChild(cella);
     }
   }
 
   function estraiNumero() {
-    const numeriEstratti = document.querySelectorAll('.estratto');
-    numeriEstratti.forEach(cella => {
-      cella.classList.remove('estratto');
-    });
+    const numeriTabellone = document.querySelectorAll("#tabellone .cella");
+    const numeriEstratti = document.querySelectorAll('#tabellone .estratto');
+    const numeriGiocatore = document.querySelectorAll('#tabellinaGiocatore .cella');
 
-    const numeroCasuale = getRandomNumber(1, 90);
-    const celleTabellone = document.querySelectorAll("#tabellone td");
-    for (const cella of celleTabellone) {
-      if (cella.textContent == numeroCasuale) {
-        cella.classList.add('estratto');
-        break;
-      }
-    }
-  }
-
-  const numeriEstratti = [];
-
-  function estraiNumero() {
-    const numeriDisponibili = generaNumeriTombola().filter(numero => !numeriEstratti.includes(numero));
-
-    if (numeriDisponibili.length === 0) {
+    if (numeriEstratti.length >= numeriTabellone.length) {
       alert("Tutti i numeri sono stati estratti!");
       return;
     }
+    let numeroCasuale;
+    do {
+      numeroCasuale = getRandomNumber(1, 76);
+    } while (Array.from(numeriEstratti).some(cella => cella.textContent == numeroCasuale));
 
-    const numeroCasuale = numeriDisponibili[getRandomNumber(0, numeriDisponibili.length - 1)];
-    numeriEstratti.push(numeroCasuale);
+   
+    const cellaTabellone = Array.from(numeriTabellone).find(cella => cella.textContent == numeroCasuale);
+    cellaTabellone.classList.add('estratto');
 
-    const celleTabellone = document.querySelectorAll("#tabellone td");
-    for (const cella of celleTabellone) {
-      if (cella.textContent == numeroCasuale) {
-        cella.classList.add('estratto');
-        break;
-      }
+    const cellaGiocatore = Array.from(numeriGiocatore).find(cella => cella.textContent == numeroCasuale);
+    if (cellaGiocatore) {
+      cellaGiocatore.classList.add('estratto');
     }
   }
 
   function inizializzaPartita() {
     document.getElementById("tabellone").innerHTML = "";
-    document.getElementById("tabellinaGiocatoreBody").innerHTML = "";
+    document.getElementById("tabellinaGiocatore").innerHTML = "";
 
   
     riempiTabellone();
@@ -96,7 +78,7 @@ function getRandomNumber(min, max) {
       riempiTabellinaGiocatore(); 
     }
 
-    const celleGiocatore = document.querySelectorAll("#tabellinaGiocatore td");
+    const celleGiocatore = document.querySelectorAll("#tabellinaGiocatore .cella");
     celleGiocatore.forEach(cella => {
       cella.addEventListener("click", function () {
         cella.classList.toggle("estratto");
