@@ -29,11 +29,12 @@ function getRandomNumber(min, max) {
 
   function riempiTabellinaGiocatore() {
     const tabellinaGiocatore = document.getElementById("tabellinaGiocatore");
-    const numeri = generaNumeriTombola();
+    const numeriDisponibili = generaNumeriTombola();
 
-    for (let i = 0; i < 24; i++) { 
+    for (let i = 0; i < 24; i++) {
       const cella = document.createElement("div");
-      const numero = numeri.pop();
+      const index = getRandomNumber(0, numeriDisponibili.length - 1);
+      const numero = numeriDisponibili.splice(index, 1)[0];
       cella.textContent = numero;
       cella.classList.add("cella");
       tabellinaGiocatore.appendChild(cella);
