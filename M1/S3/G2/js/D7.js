@@ -240,14 +240,21 @@ console.log(numeroFilm(movies));
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-function nomeFilm(array, valore) { 
-    return array.map(valore => movies.Title);
+function nomeFilm(array) { 
+    return array.map(film => film.Title);
   }
 console.log(nomeFilm(movies));
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+
+function onlyInLastMillennium(array) {
+  let oggi = new Date().getFullYear();
+  let annoInizioMillennio = 1000 * Math.floor((oggi - 1) / 1000);
+  return array.filter(film => film.Year >= annoInizioMillennio);
+}
+console.log(onlyInLastMillennium(movies));
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
