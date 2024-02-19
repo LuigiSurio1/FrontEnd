@@ -1,9 +1,10 @@
 @media print{
+
     body {
         background: white; 
     }
 
-    header, footer, aside {
+    #header, #footer, #aside, section {
         display: none; 
     }
 
@@ -15,11 +16,12 @@
         page-break-inside: avoid; 
     }
 
-    table {
+    .container {
         page-break-inside: auto; 
     }
 
     iframe {
         display: none; 
     }
+
 }
