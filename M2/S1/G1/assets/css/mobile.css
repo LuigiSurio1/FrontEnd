@@ -1,0 +1,50 @@
+@media screen and (max-width: 576px) {
+    #header {
+        height: 170px;
+    }
+
+    #header div img {
+        width: 30%;
+        height: 50%;
+    }
+
+    .crp-sopra p {
+        line-height: 7px;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .navbar li {
+        list-style: none;
+        margin: 0 10px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    article h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    section h2{
+        color: rgb(56, 56, 56);
+        background-color: gray;
+    }
+
+    section p{
+        padding: 5px;
+    }
+
+    section fieldset{
+        display: flex;
+        justify-content: start;
+    }
+}
