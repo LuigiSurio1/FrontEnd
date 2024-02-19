@@ -1,0 +1,25 @@
+@media print{
+    body {
+        background: white; 
+    }
+
+    header, footer, aside {
+        display: none; 
+    }
+
+    main {
+        margin: 10px; 
+    }
+
+    article {
+        page-break-inside: avoid; 
+    }
+
+    table {
+        page-break-inside: auto; 
+    }
+
+    iframe {
+        display: none; 
+    }
+}

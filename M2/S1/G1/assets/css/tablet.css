@@ -58,4 +58,27 @@
         height: 40px;
         box-sizing: border-box;
     }
+
+    
+    .contenitore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blocco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blocco iframe{
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: start;
+    }
 }
+
