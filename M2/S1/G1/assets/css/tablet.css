@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     #header {
         height: 190px;
     }
@@ -28,57 +28,57 @@
         color: white;
         text-decoration: none;
     }
-    article h1{
+
+    article h1 {
         font-size: 65px;
         line-height: 60px;
     }
 
-    .container{
+    .container {
         display: flex;
         justify-content: center;
     }
 
-    table{
-      margin: 0 auto;
-      padding: 50px;
+    table {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 50px;
     }
 
-    section h2{
+    section h2 {
         color: rgb(56, 56, 56);
         background-color: gray;
     }
 
-    section p{
+    section p {
         font-size: 20px;
     }
 
-    .form fieldset{
+    .form fieldset {
         display: flex;
         width: 100%;
         height: 40px;
         box-sizing: border-box;
     }
 
-    
-    .contenitore{
+    .blocco {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .blocco{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .blocco iframe{
+    .blocco iframe {
         width: 100%;
     }
 
-    .container {
-        display: flex;
-        justify-content: start;
+    .contenitore {
+        background-color: white;
+        border-color: white;
+    }
+
+    .primo,
+    .secondo,
+    .terzo {
+        width: 100%;
     }
 }
-
