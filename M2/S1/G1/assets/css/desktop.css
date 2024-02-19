@@ -62,18 +62,18 @@
         margin-top: 60px;
     }
     .blocco {
-        margin: 0 auto; 
-        display: flex; 
-        justify-content: center; 
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
-    
+
     .blocco iframe {
-        margin-right: 10px; 
+        margin-right: 10px;
         width: 60%;
     }
-    
+
     .form {
-        margin-top: 20px; 
+        margin-top: 20px;
     }
 
     section h2{
@@ -83,7 +83,7 @@
 
     .contenitore {
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
         align-items: center;
         background-color: white;
         border-color:white ;
