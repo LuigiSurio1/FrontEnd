@@ -23,7 +23,6 @@ $Success : rgba(255, 255, 255, 0.623);
     .netflix-navbar {
         z-index: 1000;
         transition: 0.2s linear;
-        position: sticky;
         width: 100vw;
     }
 
@@ -250,12 +249,16 @@ $Success : rgba(255, 255, 255, 0.623);
 
     & .footer-icons{
         color: rgba(255, 255, 255, 0.367);
+        cursor: pointer;
+        margin-left: 140px;
     }
 }
 
 
 
-@media screen and (min-width: 768px) and (max-width: 960px){
+@media screen and (min-width: 500px) and (max-width: 960px){
+
+    .header{ 
     .netflix-padding-left {
         padding-left: 10px;
     }
@@ -333,6 +336,8 @@ $Success : rgba(255, 255, 255, 0.623);
 
         margin-left: 0px;
     }
+}
+
 }
 
 

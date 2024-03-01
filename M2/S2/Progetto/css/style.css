@@ -11862,7 +11862,6 @@ textarea.form-control-lg {
 .header .netflix-navbar {
   z-index: 1000;
   transition: 0.2s linear;
-  position: sticky;
   width: 100vw;
 }
 .header .navbar-brand img {
@@ -12041,65 +12040,67 @@ textarea.form-control-lg {
 }
 .footer .footer-icons {
   color: rgba(255, 255, 255, 0.367);
+  cursor: pointer;
+  margin-left: 140px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
-  .netflix-padding-left {
+@media screen and (min-width: 500px) and (max-width: 960px) {
+  .header .netflix-padding-left {
     padding-left: 10px;
   }
-  .netflix-padding-right {
+  .header .netflix-padding-right {
     padding-right: 10px;
   }
-  .navbar-brand img {
+  .header .navbar-brand img {
     width: 43px;
   }
-  .navbar {
+  .header .navbar {
     padding-top: unset;
     padding-bottom: unset;
   }
-  i {
+  .header i {
     font-size: 12px;
     cursor: pointer;
     padding: 5px;
   }
-  .netflix-profile {
+  .header .netflix-profile {
     margin-left: 5px;
   }
-  .netflix-dropdown-box {
+  .header .netflix-dropdown-box {
     display: block;
   }
-  .netflix-nav {
+  .header .netflix-nav {
     display: none;
   }
-  .slider {
+  .header .slider {
     top: 250px;
     margin-left: 0px;
   }
-  .card {
+  .header .card {
     width: 150px;
   }
-  .margin-right {
+  .header .margin-right {
     margin-right: unset;
   }
-  .card-icon {
+  .header .card-icon {
     font-size: 17px;
   }
-  .card-body {
+  .header .card-body {
     top: 80px;
   }
-  .netflix-card-text {
+  .header .netflix-card-text {
     font-size: 8px;
   }
-  .position-slider2 {
+  .header .position-slider2 {
     top: 0px;
   }
-  .margin-title {
+  .header .margin-title {
     margin-top: 100px;
   }
-  .margin-title2 {
+  .header .margin-title2 {
     margin-top: 14px;
   }
-  .copy-right {
+  .header .copy-right {
     margin-left: 0px;
   }
 }
