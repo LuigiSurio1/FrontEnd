@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Form Creazione Pet</h1>
+
+    <form id="petForm">
+        <label for="petName">Nome Pet:</label>
+        <input type="text" id="petName">
+
+        <label for="ownerName">Nome Proprietario:</label>
+        <input type="text" id="ownerName">
+
+        <label for="species">Specie:</label>
+        <input type="text" id="species">
+
+        <label for="breed">Razza:</label>
+        <input type="text" id="breed">
+
+        <button type="button" onclick="createPet()">Crea Pet</button>
+    </form>
+
+    <h2>Lista Pet</h2>
+    <ul id="petList"></ul>
+    <script>
+
+        //N1
+
+            class User {
+                constructor(_firstName, _lastName, _age, _location) {
+                    this.firstName = _firstName;
+                    this.lastName = _lastName;
+                    this.age = _age;
+                    this.location = _location;
+                }
+                compareAge(anotherUser) {
+                    if (this.age === anotherUser.age) {
+                        return `${this.firstName} and ${anotherUser.firstName} are the same age`;
+                    } else if (this.age > anotherUser.age) {
+                        return `${this.firstName} It's more bigger than ${anotherUser.firstName}`;
+                    } else {
+                        return `${this.firstName} It's more younger than ${anotherUser.firstName}`;
+                    }
+                }
+            }
+
+        let Luigi = new User("Luigi", "Surio", 21, "Ischia");
+        let Vincenzo = new User("Vincenzo", "Surio", 20, "Napoli");
+        console.log(Luigi.compareAge(Vincenzo));
+
+        //N2
+
+
+        class Pet {
+            constructor(petName, ownerName, species, breed) {
+                this.petName = petName;
+                this.ownerName = ownerName;
+                this.species = species;
+                this.breed = breed;
+            }
+
+            sameOwnerAs(anotherPet) {
+                return this.ownerName.toLowerCase() === anotherPet.ownerName.toLowerCase();
+            }
+        }
+
+        function createPet() {
+            const petName = document.getElementById('petName').value;
+            const ownerName = document.getElementById('ownerName').value;
+            const species = document.getElementById('species').value;
+            const breed = document.getElementById('breed').value;
+
+            const newPet = new Pet(petName, ownerName, species, breed);
+            displayPet(newPet);
+        }
+
+        function displayPet(pet) {
+            const petList = document.getElementById('petList');
+            const listItem = document.createElement('li');
+            listItem.textContent = `Nome: ${pet.petName}, Proprietario: ${pet.ownerName}, Specie: ${pet.species}, Razza: ${pet.breed}`;
+            petList.appendChild(listItem);
+
+            if (petList.children.length > 1) {
+                const lastPet = petList.children[petList.children.length - 2].textContent;
+                if (pet.sameOwnerAs(parsePetData(lastPet))) {
+                    listItem.style.color = 'red';
+                    console.log(true);
+                }
+            }
+        }
+
+        function parsePetData(petDataString) {
+            const petDataArray = petDataString.split(', ');
+            const petName = petDataArray[0].split(': ')[1];
+            const ownerName = petDataArray[1].split(': ')[1];
+            const species = petDataArray[2].split(': ')[1];
+            const breed = petDataArray[3].split(': ')[1];
+            return new Pet(petName, ownerName, species, breed);
+        }
+
+
+    </script>
+</body>
+
+</html>
