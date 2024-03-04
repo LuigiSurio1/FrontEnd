@@ -78,6 +78,7 @@ $Success : rgba(255, 255, 255, 0.623);
         color: $Primary;
     }
 
+
     & i {
         font-size: 20px;
         color: $Primary;
@@ -141,7 +142,7 @@ $Success : rgba(255, 255, 255, 0.623);
         position: absolute;
         top: 600px;
         z-index: 500;
-    } 
+    }
 
     & .card {
         width: 250px;
@@ -247,7 +248,7 @@ $Success : rgba(255, 255, 255, 0.623);
         margin-left: 130px;
     }
 
-    & .footer-icons{
+    & .footer-icons {
         color: rgba(255, 255, 255, 0.367);
         cursor: pointer;
         margin-left: 140px;
@@ -256,94 +257,210 @@ $Success : rgba(255, 255, 255, 0.623);
 
 
 
-@media screen and (min-width: 500px) and (max-width: 960px){
+@media screen and (min-width: 500px) and (max-width: 960px) {
 
-    .header{ 
-    .netflix-padding-left {
-        padding-left: 10px;
+    .header {
+        .netflix-padding-left {
+            padding-left: 10px;
+        }
+
+
+        .netflix-padding-right {
+            padding-right: 10px;
+        }
+
+        .navbar-brand img {
+            width: 43px;
+        }
+
+        .navbar {
+            padding-top: unset;
+            padding-bottom: unset;
+        }
+
+        i {
+            font-size: 12px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .netflix-profile {
+            margin-left: 5px;
+        }
+
+        .netflix-dropdown-box {
+            display: block;
+        }
+
+        .netflix-nav {
+            display: none;
+        }
+
+        .slider {
+            top: 250px;
+            margin-left: 0px;
+        }
+
+        .card {
+            width: 150px;
+        }
+
+        .margin-right {
+            margin-right: unset;
+        }
+
+        .card-icon {
+            font-size: 17px;
+        }
+
+        .card-body {
+            top: 80px;
+        }
+
+        .netflix-card-text {
+            font-size: 8px;
+        }
+
+        .position-slider2 {
+            top: 0px;
+        }
+
+        .margin-title {
+            margin-top: 100px;
+        }
+
+        .margin-title2 {
+            margin-top: 14px;
+        }
+
+        .copy-right {
+
+            margin-left: 0px;
+        }
     }
 
-
-    .netflix-padding-right {
-        padding-right: 10px;
-    }
-
-    .navbar-brand img {
-        width: 43px;
-    }
-
-    .navbar {
-        padding-top: unset;
-        padding-bottom: unset;
-    }
-
-    i {
-        font-size: 12px;
-        cursor: pointer;
-        padding: 5px;
-    }
-
-    .netflix-profile {
-        margin-left: 5px;
-    }
-
-    .netflix-dropdown-box {
-        display: block;
-    }
-
-    .netflix-nav {
-        display: none;
-    }
-
-    .slider {
-        top: 250px;
-        margin-left: 0px;
-    }
-
-    .card {
-        width: 150px;
-    }
-
-    .margin-right {
-        margin-right: unset;
-    }
-
-    .card-icon {
-        font-size: 17px;
-    }
-
-    .card-body {
-        top: 80px;
-    }
-
-    .netflix-card-text {
-        font-size: 8px;
-    }
-
-    .position-slider2 {
-        top: 0px;
-    }
-
-    .margin-title {
-        margin-top: 100px;
-    }
-
-    .margin-title2 {
-        margin-top: 14px;
-    }
-
-    .copy-right {
-
-        margin-left: 0px;
-    }
 }
 
+
+/* Login Page*/
+
+.contenitoreLogin {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.491), rgba(0, 0, 0, 0.416)), url(../Netflix-assets/assets/login-bg.jpeg);
+    height: 100vh;
+}
+
+.login-top {
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.login-top img {
+    width: 150px;
+}
+
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.899);
+    width: 430px;
+    height: 630px;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+.form-control {
+    box-shadow: none;
 }
 
 
 /* Profile Page*/
 
-.contenitoreProfile{
+.contenitoreProfile {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    height: 100vh;
     background-color: #141414;
+    color: white;
+}
+
+.container-md {
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+hr {
+    background-color: #333333;
+    height: 2px;
+}
+
+.form-check-input-profile[type=checkbox] {
+    border-radius: 0;
+    width: 2em;
+    height: 2em;
+}
+
+.col-md-4 img {
+    max-width: 150px;
+}
+
+.btn{
+    border-radius: 0;
+}
+
+.titles{
+    color: #CCC6CC;
+}
+
+.bottone-grande{
     width: 100%;
-    }
+    text-align: left;
+}
+
+.bottone-medio{
+    background-color: #333333;
+    margin-bottom: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+.bottone-piccolo{
+    width: 80px;
+    height: 35px;
+}
+
+.bottoni-ultimi:hover{
+    background-color: white;
+    color: #141414;
+    font-weight: bold;
+}
+
+.bottoni-ultimi{
+    margin: 10px;
+    margin-top: 0;
+    width: 30%;
+}
+
+.bottoni-ultimi-3{
+    margin: 10px;
+    margin-top: 0;
+    width: 100%;
+}
+
+.bottoni-ultimi-3:hover{
+    background-color: white;
+    color: #141414;
+    font-weight: bold;
+}
+.test{
+    font-size: 15px;
+    margin-top: 5px
+}
