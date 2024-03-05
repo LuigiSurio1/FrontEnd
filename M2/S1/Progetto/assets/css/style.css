@@ -339,9 +339,3 @@ h3, .description-article, .img-article {
     border-top: 0.8px solid #f2f2f2;
     width: 90%;
 }
-
-/* animazione M */
-
-.hide {
-    display: none;
-}

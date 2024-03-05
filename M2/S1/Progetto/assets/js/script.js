@@ -9,6 +9,3 @@ window.addEventListener('scroll', () => {
         a.classList.remove('green-background')
     }
 })
-
-
-//animazione delle M
