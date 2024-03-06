@@ -1,0 +1,9 @@
+.card{
+    margin-bottom: 50px;
+    --bs-body-color: white;
+}
+
+
+body{
+    --bs-body-bg: black;
+}
