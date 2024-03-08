@@ -1,0 +1,8 @@
+.card{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.body-back{
+    background-image: url(https://picsum.photos/200/300?grayscale);
+}

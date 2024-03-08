@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="body-back">
+
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./back-office.html">
+                    <img src="./assets/img/R.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top me-3">
+                    Info dei Prodotti
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <form>
+            <input id="name" type="text" class="form-control mt-3" placeholder="Nome Prodotto" required>
+            <input id="brand" type="text" class="form-control mt-4" placeholder="Brand del Prodotto" required>
+            <div class="input-group">
+                <input id="price" type="text" class="form-control mt-4" placeholder="Prezzo Prodotto" required>
+            </div>
+            <input id="img-url" type="text" class="form-control mt-4" placeholder="Image Url" required>
+            <textarea id="description" class="form-control mt-4 mb-3" placeholder="Descrizione"></textarea>
+            <button id="salva-btn" class="btn btn-warning" type="button">Salva</button>
+            <button id="delete-btn" class="btn btn-danger" type="button">Elimina</button>
+        </form>
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Progetto</title>
+</head>
+
+<body class="body-home">
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./back-office.html">
+                    <img src="./assets/img/website-icon-8.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    <button class="btn btn-secondary ms-4">Aggiungi nuovo prodotto +</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="border-bottom py-2">Prodotti</h1>
+        <div class="row">
+            <template id="card-template">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width: 15rem;">
+                        <img id="img" src="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 id="name" class="card-title"></h5>
+                            <p id="price" class="card-text"></p>
+                            <a href="#" class="btn btn-success">Info</a>
+                            <a href="./edit.html" id="editBtn" class="btn btn-primary">Edit</a>
+                            <a href="#" class="btn btn-danger" id="deleteBtn" onclick="discardCard(this)">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script1.js"></script>
+</body>
+
+</html>
