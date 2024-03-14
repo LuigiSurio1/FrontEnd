@@ -10,7 +10,7 @@ class Prodotti {
 }
 
 let url = new URLSearchParams(location.search)
-let product_id = url.get('product_id')
+let product_id = url.get('_id')
 
 fetch('https://striveschool-api.herokuapp.com/api/product/', {
     method: 'GET',
@@ -47,6 +47,7 @@ function discardCard(button) {
     const card = button.closest('.card');
     card.remove();
 }
+
 
 
 

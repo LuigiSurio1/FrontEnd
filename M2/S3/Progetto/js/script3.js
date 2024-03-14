@@ -1,5 +1,5 @@
 let url = new URLSearchParams(location.search)
-let product_id = url.get('id')
+let product_id = url.get('_id')
 
 fetch(`https://striveschool-api.herokuapp.com/api/product/${product_id}`, {
     method: 'GET',
@@ -49,7 +49,7 @@ salvaBtn.addEventListener('click', (e) => {
 
     }
 
-    fetch(`https://striveschool-api.herokuapp.com/api/product/${prodotto.product_id}`, {
+    fetch(`https://striveschool-api.herokuapp.com/api/product/${product_id}`, {
         method: 'PUT',
         headers: {
             "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZDk5NzJkN2IxMTAwMTkwZTZkZTciLCJpYXQiOjE3MDk4ODk5NDMsImV4cCI6MTcxMTA5OTU0M30.KwFldVekQ_wwQFUgscr-qK496aNpdLbE-128XM9R1ak",
@@ -69,7 +69,6 @@ salvaBtn.addEventListener('click', (e) => {
 let deleteBtn = document.querySelector('#delete-btn')
 
 deleteBtn.addEventListener('click', (e) => {
-    e.preventDefault()
 
     let name = document.querySelector('#name').value
     let brand = document.querySelector('#brand').value
@@ -86,7 +85,7 @@ deleteBtn.addEventListener('click', (e) => {
 
     }
 
-    fetch(`https://striveschool-api.herokuapp.com/api/product/${prodottoEliminato.product_id}`, {
+    fetch(`https://striveschool-api.herokuapp.com/api/product/${product_id}`, {
         method: 'DELETE',
         headers: {
     
@@ -97,7 +96,7 @@ deleteBtn.addEventListener('click', (e) => {
         body:JSON.stringify(prodottoEliminato),
     })
         .then(res => res.json())
-        .then(res => {
-            localStorage = 'index.html'
+        .then(product => {
+            location.href = 'index.html'
         })
 })
