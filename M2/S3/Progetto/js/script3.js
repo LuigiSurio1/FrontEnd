@@ -1,5 +1,5 @@
 let url = new URLSearchParams(location.search)
-let product_id = url.get('_id')
+let product_id = url.get('id')
 
 fetch(`https://striveschool-api.herokuapp.com/api/product/${product_id}`, {
     method: 'GET',
