@@ -7,7 +7,7 @@ import { iPosts } from './Models/post';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'g3';
+  title = 'G3';
 
   postsArr:iPosts[] = [];
 

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "g3": {
+    "G3": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -37,7 +37,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
           },
@@ -69,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "g3:build:production"
+              "buildTarget": "G3:build:production"
             },
             "development": {
-              "buildTarget": "g3:build:development"
+              "buildTarget": "G3:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "g3:build"
+            "buildTarget": "G3:build"
           }
         },
         "test": {
@@ -97,8 +98,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/bootstrap/scss/bootstrap.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -107,6 +107,6 @@
     }
   },
   "cli": {
-    "analytics": "f035e97d-cce8-443d-a2cb-d1f3cdee4af4"
+    "analytics": "b51ecdad-cabc-45ea-b049-a16dc9778d55"
   }
 }
