@@ -1,13 +1,15 @@
 <app-navbar></app-navbar>
 
 
-    <div class="col-md-8">
-      <div class="card-body" *ngFor="let post of postsArr; let id= index" >
-        <h5 class="card-title">{{post.title}}</h5>
-        <p class="card-text">{{post.body}}</p>
-        <p class="card-text"><small class="text-body-secondary">{{post.tags}}</small></p>
-      </div>
+<div class="col-md-8">
+  <div class="text-center ms-5">
+    <div class="card-body" *ngFor="let post of randomArray; let id= index">
+      <h5 class="card-title">{{post.title}}</h5>
+      <p class="card-text">{{post.body}}</p>
+      <p class="card-text"><small class="text-body-secondary">{{post.tags}}</small></p>
     </div>
-
-  <div >
   </div>
+</div>
+
+<div>
+</div>
