@@ -1,0 +1,8 @@
+<div [ngClass]="{'bg-success': machine.available, 'bg-danger': !machine.available}" class="card text-bg-dark" *ngFor="let machine of audiCars ">
+  <img [src]="machine.modelImage" class="card-img">
+  <div class="card-img">
+    <h5 class="card-title">{{machine.model}}</h5>
+    <p class="card-text">{{machine.brand}}</p>
+    <p class="card-text"><small>{{machine.year}}</small></p>
+  </div>
+</div>

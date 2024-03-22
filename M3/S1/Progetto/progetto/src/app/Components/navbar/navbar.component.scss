@@ -1,0 +1,16 @@
+img {
+  width: 45px;
+  height: 40px;
+}
+
+*{
+  background-color: #150c21;
+  & a:hover{
+    color: #D4B6E0;
+  }
+}
+
+a{
+  color: #fff;
+}
+
