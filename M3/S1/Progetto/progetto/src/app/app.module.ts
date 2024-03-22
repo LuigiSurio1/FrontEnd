@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {RandomCardComponent} from './secondary-components/random-card/random-card.component'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
@@ -19,7 +18,6 @@ import { AudiComponent } from './Pages/audi/audi.component';
     FiatComponent,
     FordComponent,
     AudiComponent,
-    RandomCardComponent
   ],
   imports: [
     BrowserModule,

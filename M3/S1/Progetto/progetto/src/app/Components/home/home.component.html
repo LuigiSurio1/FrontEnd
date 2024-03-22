@@ -6,11 +6,22 @@
   <div class="row">
     <h2 class="text-center">I nostri marchi</h2>
     <div class="d-flex align-items-center justify-content-center loghi">
-      <a routerLink="/progetto/src/app/Pages/fiat"><img src="../../../assets/loghi/fiat logo.png" alt="logo fiat"></a>
-      <a routerLink="/progetto/src/app/Pages/ford"><img src="../../../assets/loghi/ford.png" alt="logo ford"></a>
-      <a routerLink="/progetto/src/app/Pages/audi"><img src="../../../assets/loghi/audi.png" alt="logo audi"></a>
+      <a routerLink="/fiat"><img src="../../../assets/loghi/fiat logo.png" alt="logo fiat"></a>
+      <a routerLink="/ford"><img src="../../../assets/loghi/ford.png" alt="logo ford"></a>
+      <a routerLink="/audi"><img src="../../../assets/loghi/audi.png" alt="logo audi"></a>
     </div>
     <hr>
   </div>
-</div>
-
+  <div class="container mb-5">
+    <h2 class="text-center">Auto in evidenza</h2>
+    <div class="row justify-content-between">
+      <div [ngClass]="{'bg-success': machine.available, 'bg-danger': !machine.available}" class="card text-bg-dark"
+        *ngFor="let machine of inEvidenceMachine ">
+        <img [src]="machine.modelImage" class="card-img">
+        <div class="card-img">
+          <h5 class="card-title">{{machine.model}}</h5>
+          <p class="card-text">{{machine.brand}}</p>
+          <p class="card-text"><small>{{machine.year}}</small></p>
+        </div>
+      </div>
+    </div>
