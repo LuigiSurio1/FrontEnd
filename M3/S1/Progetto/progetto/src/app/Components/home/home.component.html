@@ -3,18 +3,20 @@
     <img src="../../../assets/Img/logo.png" alt="logo pagina">
     <h2 class="text-center">Il tuo autosalone di fiducia</h2>
   </div>
-  <div class="row">
-    <h2 class="text-center">I nostri marchi</h2>
-    <div class="d-flex align-items-center justify-content-center loghi">
-      <a routerLink="/fiat"><img src="../../../assets/loghi/fiat logo.png" alt="logo fiat"></a>
-      <a routerLink="/ford"><img src="../../../assets/loghi/ford.png" alt="logo ford"></a>
-      <a routerLink="/audi"><img src="../../../assets/loghi/audi.png" alt="logo audi"></a>
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="text-center">I nostri marchi</h2>
+      <div class="d-flex align-items-center justify-content-center loghi">
+        <a routerLink="/fiat"><img src="../../../assets/loghi/fiat logo.png" alt="logo fiat"></a>
+        <a routerLink="/ford"><img src="../../../assets/loghi/ford.png" alt="logo ford"></a>
+        <a routerLink="/audi"><img src="../../../assets/loghi/audi.png" alt="logo audi"></a>
+      </div>
     </div>
-    <hr>
   </div>
+  <hr>
   <div class="container mb-5">
     <h2 class="text-center">Auto in evidenza</h2>
-    <div class="row justify-content-between">
+    <div class="row justify-content-between mb-5">
       <div [ngClass]="{'bg-success': machine.available, 'bg-danger': !machine.available}" class="card text-bg-dark"
         *ngFor="let machine of inEvidenceMachine ">
         <img [src]="machine.modelImage" class="card-img">
