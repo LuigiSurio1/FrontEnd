@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Todo } from '../interfaces/todo';
-import { todos } from "src/assets/todos.json";
+import { todos } from "../../assets/todos";
 import { User } from '../interfaces/user';
 import { UserServiceService } from './user.service.service';
 

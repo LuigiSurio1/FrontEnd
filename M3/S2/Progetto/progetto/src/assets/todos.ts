@@ -1,4 +1,4 @@
-import { Todo } from 'src/app/interfaces/todo';
+import { Todo } from '../app/interfaces/todo';
 
 export const todos: Todo[] = [
   {

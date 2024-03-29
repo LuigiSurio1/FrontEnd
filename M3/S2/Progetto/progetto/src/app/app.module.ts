@@ -8,12 +8,12 @@ import { OneUserComponent } from './components/one-user/one-user.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { TodosComponent } from './pages/todos/todos.component';
 import { UsersComponent } from './pages/users/users.component';
-import { TodoPipePipe } from './pipes/todo.pipe.pipe';
-import { UserPipePipe } from './pipes/user.pipe.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DoneComponent } from './pages/done/done.component';
 import { CorporalComponent } from './pages/corporal/corporal.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TodoPipe } from './pipes/todo.pipe';
+import { UserPipe } from './pipes/user.pipe';
 
 @NgModule({
   declarations: [
@@ -23,12 +23,14 @@ import { FooterComponent } from './components/footer/footer.component';
     HomepageComponent,
     TodosComponent,
     UsersComponent,
-    TodoPipePipe,
-    UserPipePipe,
+    TodoPipe,
+    UserPipe,
     NavbarComponent,
     DoneComponent,
     CorporalComponent,
-    FooterComponent
+    FooterComponent,
+    TodoPipe,
+    UserPipe
   ],
   imports: [
     BrowserModule,

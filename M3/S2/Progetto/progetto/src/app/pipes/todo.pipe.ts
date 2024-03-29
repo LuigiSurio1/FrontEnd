@@ -2,12 +2,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { User } from '../interfaces/user';
 
 @Pipe({
-  name: 'todoPipe'
+  name: 'todo'
 })
-export class TodoPipePipe implements PipeTransform {
+export class TodoPipe implements PipeTransform {
 
-  transform({firstName, lastName}: User): string {
+  transform({ firstName, lastName }: User): string {
     return `${firstName} ${lastName}`;
   }
+  }
 
-}
