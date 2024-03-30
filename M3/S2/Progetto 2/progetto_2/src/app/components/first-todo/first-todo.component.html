@@ -1,1 +1,15 @@
-<p>first-todo works!</p>
+<div
+[ngClass]="{'alert':true, 'alert-success' : todo.completed, 'alert-danger' : !todo.completed}"
+role="alert">
+  <div class="d-flex gap-2 align-items-start">
+    <input type="checkbox"
+    [(ngModel)]="todo.completed"
+    class="mt-2">
+    <div>
+      <p class="fs-5 fw-bold mb-0">{{todo.todo}}</p>
+      <p class="mb-2">Assigned to: <span class="fst-poppins fw-bold">
+        {{user?.firstName}} {{user?.lastName}}
+      </span></p>
+    </div>
+  </div>
+</div>
