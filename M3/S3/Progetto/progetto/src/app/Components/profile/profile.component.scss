@@ -1,0 +1,94 @@
+.contenitoreProfile {
+  padding: 20px;
+  margin-top: 50px;
+  height: 100vh;
+  background-color: #141414;
+  color: white;
+}
+
+.container-md {
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+hr {
+  background-color: #333333;
+  height: 2px;
+}
+
+.form-check-input-profile[type=checkbox] {
+  border-radius: 0;
+  width: 2em;
+  height: 2em;
+}
+
+.col-md-4 img {
+  max-width: 150px;
+}
+
+.btn{
+  border-radius: 0;
+}
+
+.titles{
+  color: #CCC6CC;
+}
+
+.bottone-grande{
+  width: 100%;
+  text-align: left;
+}
+
+.bottone-medio{
+  background-color: #333333;
+  margin-bottom: 8px;
+  border: none;
+  font-weight: bold;
+}
+
+.bottone-piccolo{
+  width: 80px;
+  height: 35px;
+}
+
+.bottoni-ultimi:hover{
+  background-color: white;
+  color: #141414;
+  font-weight: bold;
+}
+
+.bottoni-ultimi{
+  margin: 10px;
+  margin-top: 0;
+  width: 30%;
+}
+
+.bottoni-ultimi-3{
+  margin: 10px;
+  margin-top: 0;
+  width: 100%;
+}
+
+.bottoni-ultimi-3:hover{
+  background-color: white;
+  color: #141414;
+  font-weight: bold;
+}
+.test{
+  font-size: 15px;
+  margin-top: 5px
+}
+
+.login-top {
+  width: 100vw;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.login-top img {
+  width: 150px;
+}

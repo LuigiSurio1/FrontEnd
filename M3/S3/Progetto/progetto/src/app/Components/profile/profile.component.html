@@ -1,1 +1,58 @@
-<p>profile works!</p>
+
+<body>
+    <div class="contenitoreProfile">
+        <div class="login-top">
+            <img src="../../../assets/Profile/netflix_logo.png" alt="logo">
+        </div>
+        <div class="container">
+            <div class="container-md">
+                <div class="row">
+                    <h1>Edit Profile</h1>
+                    <hr>
+                    <div class="col-md-4">
+                        <img src="../../../assets/Profile/avatar.png" alt="Descrizione immagine" class="img-fluid">
+                    </div>
+                    <div class="col-md-7 py-2">
+                        <button type="button" class="btn btn-secondary mb-2 bottone-grande">Strive Students</button>
+                        <div class="dropdown">
+                            <p class="titles">Language:</p>
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="#">Italian</a></li>
+                                <li><a class="dropdown-item" href="#">Deutch</a></li>
+                                <li><a class="dropdown-item" href="#">French</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <p class="titles">Maturity Settings:</p>
+                        <button type="button" class="btn btn-secondary bottone-medio">All Maturity Ratings</button>
+                        <p class="test">Show Titles of <b>all maturity ratings</b> for this profile.</p>
+                        <button type="button" class="btn btn-outline-secondary bottone-piccolo">EDIT</button>
+                        <hr>
+                        <p class="titles">Autoplay Controls</p>
+                        <div class="form-check-profile">
+                            <input class="form-check-input-profile" type="checkbox" id="autoplayNextEpisode">
+                            <label class="form-check-label" for="autoplayNextEpisode">Autoplay next episode</label>
+                        </div>
+                        <div class="form-check-profile">
+                            <input class="form-check-input-profile" type="checkbox" id="autoplayTrailers">
+                            <label class="form-check-label" for="autoplayTrailers">Autoplay trailers</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center align-items-center ">
+                        <button type="button" class="btn btn-outline-secondary bottoni-ultimi">SAVE</button>
+                        <button type="button" class="btn btn-outline-secondary bottoni-ultimi">CANCEL</button>
+                        <button type="button" class="btn btn-outline-secondary bottoni-ultimi-3">DELETE PROFILE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
