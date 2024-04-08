@@ -1,1 +1,11 @@
-<p>movies works!</p>
+<div class="movie-tile-wrapper">
+  <div>
+      <div class="poster-wrapper">
+          <img [src]="imageUrl" width="200px" height="300px" />
+      </div>
+      <div class="icon-bar">
+          <mat-icon (click)="onFavClick()"></mat-icon>
+          <mat-icon (click)="onWatchedClick()"></mat-icon>
+      </div>
+  </div>
+</div>

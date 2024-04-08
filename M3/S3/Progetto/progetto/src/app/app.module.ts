@@ -6,7 +6,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
-
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { AppComponent } from './app.component';
@@ -17,6 +17,8 @@ import { MoviesComponent } from './Components/movies/movies.component';
 import { ProfilesComponent } from './Components/profiles/profiles.component';
 import { ProfileComponent } from './Components/profile/profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MoviesListComponent } from './Components/movies-list/movies-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     MoviesComponent,
     ProfilesComponent,
-    ProfileComponent
+    ProfileComponent,
+    MoviesListComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatSidenavModule,
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

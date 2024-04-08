@@ -1,0 +1,27 @@
+<div class="movies-list-wrapper">
+  <h3 *ngIf="movies.length < 1">Caricamento...</h3>
+  <h3 *ngIf="yetToWatchMovies.length">Film Da Vedere</h3>
+  <div class="to-watch">
+      <app-movies
+          *ngFor="let movie of yetToWatchMovies"
+          [imageUrl]="movie.image"
+          [id]="movie.id"
+          [isWatched]="movie.isWatched"
+          [isFav]="movie.isFav"
+          (favClick)="onFavClick(movie)"
+          (watchedClick)="onWatchedClick(movie)"
+      ></app-movies>
+  </div>
+  <h3 *ngIf="watchedMovies.length">Già Visti</h3>
+      <div class="to-watch">
+          <app-movies
+              *ngFor="let movie of watchedMovies"
+              [imageUrl]="movie.image"
+              [id]="movie.id"
+              [isWatched]="movie.isWatched"
+              [isFav]="movie.isFav"
+              (favClick)="onFavClick(movie)"
+              (watchedClick)="onWatchedClick(movie)"
+          ></app-movies>
+      </div>
+</div>
